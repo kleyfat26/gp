@@ -840,11 +840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\gestion-pedidos\\gestionPedidos\\gestionPedidos.csproj",
+      "projectUniqueName": "C:\\gp\\gestionPedidos\\gestionPedidos.csproj",
       "projectName": "gestionPedidos",
-      "projectPath": "C:\\gestion-pedidos\\gestionPedidos\\gestionPedidos.csproj",
+      "projectPath": "C:\\gp\\gestionPedidos\\gestionPedidos.csproj",
       "packagesPath": "C:\\Users\\OSC4R\\.nuget\\packages\\",
-      "outputPath": "C:\\gestion-pedidos\\gestionPedidos\\obj\\",
+      "outputPath": "C:\\gp\\gestionPedidos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aca69jBJzb00Z/BCmT1tDkz7R2F9DovvyCz/BkXcfwCu2PCSt3dLzaXkLKgrwLxMY7UybLAhO1xT4sXRUxZc0Q==",
+  "dgSpecHash": "80GdLD9ocBj/wzHCoNi3pOPV90RmQ3zkIaza4/lBRXW/y2LD+wLdWjnEZyjd7c6D6MTg4YlHzYxm4t1ADgYs6Q==",
   "success": true,
-  "projectFilePath": "C:\\gestion-pedidos\\gestionPedidos\\gestionPedidos.csproj",
+  "projectFilePath": "C:\\gp\\gestionPedidos\\gestionPedidos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OSC4R\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\OSC4R\\.nuget\\packages\\jetbrains.annotations\\2022.1.0\\jetbrains.annotations.2022.1.0.nupkg.sha512",
