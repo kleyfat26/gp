@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace gestionPedidos.Models
+{
+    public partial class Yewuyuan
+    {
+        public int Id { get; set; }
+        public string Bianhao { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public string Py { get; set; } = null!;
+        public string Diqu { get; set; } = null!;
+        public string Tel { get; set; } = null!;
+        public string Dizhi { get; set; } = null!;
+        public int Dianshu { get; set; }
+        public string Beizhu { get; set; } = null!;
+        public string Auth { get; set; } = null!;
+        public int Jinyong { get; set; }
+        public DateTime Fecha { get; set; }
+    }
+}

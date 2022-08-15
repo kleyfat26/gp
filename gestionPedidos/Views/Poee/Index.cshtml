@@ -1,0 +1,54 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model IPagedList<Poee>
+
+<div class="horizontal-scroll">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Pedido key</th>
+                <th>Forma pedido</th>
+                <th>Codigo del Cliente</th>
+                <th>Nombre del cliente</th>
+                <th>Vendedor</th>
+                <th>Fecha pedido</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Poee poee in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="PoeeDetalle" asp-route-pedidoKey="@poee.Pedidokey">@poee.Pedidokey</a>
+                    </td>
+                    <td>@poee.Formaped</td>
+                    <td>@poee.Cliente</td>
+                    <td>@poee.Namecliente</td>
+                    <td>@poee.Vendedor</td>
+                    <td>@poee.Fechapedido</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@Html.PagedListPager(Model, i => Url.Action("Index", "Poee", new {i}))
+
+<style>
+    .pagination-container {
+        display: grid;
+        place-items: center;
+    }
+
+    .pagination li {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .horizontal-scroll{
+        overflow: auto;
+    }
+</style>

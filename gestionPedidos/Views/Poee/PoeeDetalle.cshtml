@@ -1,0 +1,42 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model IPagedList<Pedidomov>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Pedido key</th>
+            <th>Nombre</th>
+            <th>Codigo de barras</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (Pedidomov p in Model)
+        {
+            <tr>
+                <td>@p.PedidoKey</td>
+                <td>@p.Name</td>
+                <td>@p.Bianhao</td>
+                <td>@p.Precio</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, i => Url.Action("PoeeDetalle", "Poee", new {pedidoKey=ViewBag.pedidoKey, i}))
+
+<style>
+    .pagination-container {
+        display: grid;
+        place-items: center;
+    }
+
+    .pagination li {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+</style>
